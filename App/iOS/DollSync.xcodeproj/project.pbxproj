@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF05D02579DC833EB5B86E0E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B108707AF40642C73780D01 /* libPods.a */; };
+		C71E00ED1C5C67CF00011FEB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71E00EC1C5C67CF00011FEB /* AudioToolbox.framework */; };
+		C7E9B1341C566E83002165B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B1331C566E83002165B6 /* AppDelegate.swift */; };
+		C7E9B1361C566E83002165B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B1351C566E83002165B6 /* ViewController.swift */; };
+		C7E9B1391C566E83002165B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E9B1371C566E83002165B6 /* Main.storyboard */; };
+		C7E9B13B1C566E83002165B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E9B13A1C566E83002165B6 /* Assets.xcassets */; };
+		C7E9B13E1C566E83002165B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E9B13C1C566E83002165B6 /* LaunchScreen.storyboard */; };
+		C7E9B1491C566E83002165B6 /* DollSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B1481C566E83002165B6 /* DollSyncTests.swift */; };
+		C7E9B1541C566E83002165B6 /* DollSyncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B1531C566E83002165B6 /* DollSyncUITests.swift */; };
+		C7E9B1641C567243002165B6 /* DSKonashi.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B1631C567243002165B6 /* DSKonashi.m */; };
+		C7E9B1741C567253002165B6 /* AirSensorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B1671C567253002165B6 /* AirSensorManager.m */; };
+		C7E9B1751C567253002165B6 /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B1691C567253002165B6 /* DebugLog.swift */; };
+		C7E9B1761C567253002165B6 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B16B1C567253002165B6 /* FileManager.m */; };
+		C7E9B1771C567253002165B6 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B16D1C567253002165B6 /* Log.m */; };
+		C7E9B1781C567253002165B6 /* Share.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B16F1C567253002165B6 /* Share.m */; };
+		C7E9B17A1C567253002165B6 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B1721C567253002165B6 /* Util.swift */; };
+		C7E9B17B1C567253002165B6 /* Util_C.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B1731C567253002165B6 /* Util_C.m */; };
+		C7E9B17F1C5673A7002165B6 /* AirNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B17C1C5673A7002165B6 /* AirNetworkManager.swift */; };
+		C7E9B1801C5673A7002165B6 /* AirService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B17D1C5673A7002165B6 /* AirService.swift */; };
+		C7E9B1811C5673A7002165B6 /* AirServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B17E1C5673A7002165B6 /* AirServiceManager.swift */; };
+		C7E9B1851C56772E002165B6 /* DSVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9B1841C56772E002165B6 /* DSVoice.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7E9B1451C566E83002165B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7E9B1281C566E83002165B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7E9B12F1C566E83002165B6;
+			remoteInfo = DollSync;
+		};
+		C7E9B1501C566E83002165B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7E9B1281C566E83002165B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7E9B12F1C566E83002165B6;
+			remoteInfo = DollSync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		289163D6E399210613E73BFC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		93ED19369D55C06541B16DA1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9B108707AF40642C73780D01 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71E00EC1C5C67CF00011FEB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C7E9B1301C566E83002165B6 /* DollSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DollSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E9B1331C566E83002165B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7E9B1351C566E83002165B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7E9B1381C566E83002165B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7E9B13A1C566E83002165B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7E9B13D1C566E83002165B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C7E9B13F1C566E83002165B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7E9B1441C566E83002165B6 /* DollSyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DollSyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E9B1481C566E83002165B6 /* DollSyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollSyncTests.swift; sourceTree = "<group>"; };
+		C7E9B14A1C566E83002165B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7E9B14F1C566E83002165B6 /* DollSyncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DollSyncUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E9B1531C566E83002165B6 /* DollSyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollSyncUITests.swift; sourceTree = "<group>"; };
+		C7E9B1551C566E83002165B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7E9B1611C567242002165B6 /* DollSync-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DollSync-Bridging-Header.h"; sourceTree = "<group>"; };
+		C7E9B1621C567243002165B6 /* DSKonashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSKonashi.h; sourceTree = "<group>"; };
+		C7E9B1631C567243002165B6 /* DSKonashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSKonashi.m; sourceTree = "<group>"; };
+		C7E9B1661C567253002165B6 /* AirSensorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirSensorManager.h; sourceTree = "<group>"; };
+		C7E9B1671C567253002165B6 /* AirSensorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirSensorManager.m; sourceTree = "<group>"; };
+		C7E9B1691C567253002165B6 /* DebugLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugLog.swift; sourceTree = "<group>"; };
+		C7E9B16A1C567253002165B6 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		C7E9B16B1C567253002165B6 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		C7E9B16C1C567253002165B6 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		C7E9B16D1C567253002165B6 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		C7E9B16E1C567253002165B6 /* Share.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Share.h; sourceTree = "<group>"; };
+		C7E9B16F1C567253002165B6 /* Share.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Share.m; sourceTree = "<group>"; };
+		C7E9B1721C567253002165B6 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		C7E9B1731C567253002165B6 /* Util_C.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util_C.m; sourceTree = "<group>"; };
+		C7E9B17C1C5673A7002165B6 /* AirNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirNetworkManager.swift; sourceTree = "<group>"; };
+		C7E9B17D1C5673A7002165B6 /* AirService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirService.swift; sourceTree = "<group>"; };
+		C7E9B17E1C5673A7002165B6 /* AirServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirServiceManager.swift; sourceTree = "<group>"; };
+		C7E9B1841C56772E002165B6 /* DSVoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSVoice.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7E9B12D1C566E83002165B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71E00ED1C5C67CF00011FEB /* AudioToolbox.framework in Frameworks */,
+				AF05D02579DC833EB5B86E0E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E9B1411C566E83002165B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E9B14C1C566E83002165B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40DC6AA53EC082D40B4493C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C71E00EC1C5C67CF00011FEB /* AudioToolbox.framework */,
+				9B108707AF40642C73780D01 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8BF85473C2142617E851A4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				289163D6E399210613E73BFC /* Pods.debug.xcconfig */,
+				93ED19369D55C06541B16DA1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C7E9B1271C566E83002165B6 = {
+			isa = PBXGroup;
+			children = (
+				C7E9B1651C567253002165B6 /* Sensor */,
+				C7E9B1681C567253002165B6 /* Utility */,
+				C7E9B1321C566E83002165B6 /* DollSync */,
+				C7E9B1471C566E83002165B6 /* DollSyncTests */,
+				C7E9B1521C566E83002165B6 /* DollSyncUITests */,
+				C7E9B1311C566E83002165B6 /* Products */,
+				B8BF85473C2142617E851A4F /* Pods */,
+				40DC6AA53EC082D40B4493C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C7E9B1311C566E83002165B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7E9B1301C566E83002165B6 /* DollSync.app */,
+				C7E9B1441C566E83002165B6 /* DollSyncTests.xctest */,
+				C7E9B14F1C566E83002165B6 /* DollSyncUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7E9B1321C566E83002165B6 /* DollSync */ = {
+			isa = PBXGroup;
+			children = (
+				C7E9B1331C566E83002165B6 /* AppDelegate.swift */,
+				C7E9B1351C566E83002165B6 /* ViewController.swift */,
+				C7E9B17E1C5673A7002165B6 /* AirServiceManager.swift */,
+				C7E9B17D1C5673A7002165B6 /* AirService.swift */,
+				C7E9B17C1C5673A7002165B6 /* AirNetworkManager.swift */,
+				C7E9B1841C56772E002165B6 /* DSVoice.swift */,
+				C7E9B1621C567243002165B6 /* DSKonashi.h */,
+				C7E9B1631C567243002165B6 /* DSKonashi.m */,
+				C7E9B1371C566E83002165B6 /* Main.storyboard */,
+				C7E9B13A1C566E83002165B6 /* Assets.xcassets */,
+				C7E9B13C1C566E83002165B6 /* LaunchScreen.storyboard */,
+				C7E9B13F1C566E83002165B6 /* Info.plist */,
+				C7E9B1611C567242002165B6 /* DollSync-Bridging-Header.h */,
+			);
+			path = DollSync;
+			sourceTree = "<group>";
+		};
+		C7E9B1471C566E83002165B6 /* DollSyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7E9B1481C566E83002165B6 /* DollSyncTests.swift */,
+				C7E9B14A1C566E83002165B6 /* Info.plist */,
+			);
+			path = DollSyncTests;
+			sourceTree = "<group>";
+		};
+		C7E9B1521C566E83002165B6 /* DollSyncUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C7E9B1531C566E83002165B6 /* DollSyncUITests.swift */,
+				C7E9B1551C566E83002165B6 /* Info.plist */,
+			);
+			path = DollSyncUITests;
+			sourceTree = "<group>";
+		};
+		C7E9B1651C567253002165B6 /* Sensor */ = {
+			isa = PBXGroup;
+			children = (
+				C7E9B1661C567253002165B6 /* AirSensorManager.h */,
+				C7E9B1671C567253002165B6 /* AirSensorManager.m */,
+			);
+			path = Sensor;
+			sourceTree = "<group>";
+		};
+		C7E9B1681C567253002165B6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C7E9B1691C567253002165B6 /* DebugLog.swift */,
+				C7E9B16A1C567253002165B6 /* FileManager.h */,
+				C7E9B16B1C567253002165B6 /* FileManager.m */,
+				C7E9B16C1C567253002165B6 /* Log.h */,
+				C7E9B16D1C567253002165B6 /* Log.m */,
+				C7E9B16E1C567253002165B6 /* Share.h */,
+				C7E9B16F1C567253002165B6 /* Share.m */,
+				C7E9B1721C567253002165B6 /* Util.swift */,
+				C7E9B1731C567253002165B6 /* Util_C.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7E9B12F1C566E83002165B6 /* DollSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7E9B1581C566E83002165B6 /* Build configuration list for PBXNativeTarget "DollSync" */;
+			buildPhases = (
+				8212085C37E2DFC5051B0C4D /* Check Pods Manifest.lock */,
+				C7E9B12C1C566E83002165B6 /* Sources */,
+				C7E9B12D1C566E83002165B6 /* Frameworks */,
+				C7E9B12E1C566E83002165B6 /* Resources */,
+				0E9B84955B8ED47662C33C61 /* Embed Pods Frameworks */,
+				F6C791AE95940DD3DD40927B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DollSync;
+			productName = DollSync;
+			productReference = C7E9B1301C566E83002165B6 /* DollSync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7E9B1431C566E83002165B6 /* DollSyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7E9B15B1C566E83002165B6 /* Build configuration list for PBXNativeTarget "DollSyncTests" */;
+			buildPhases = (
+				C7E9B1401C566E83002165B6 /* Sources */,
+				C7E9B1411C566E83002165B6 /* Frameworks */,
+				C7E9B1421C566E83002165B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7E9B1461C566E83002165B6 /* PBXTargetDependency */,
+			);
+			name = DollSyncTests;
+			productName = DollSyncTests;
+			productReference = C7E9B1441C566E83002165B6 /* DollSyncTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C7E9B14E1C566E83002165B6 /* DollSyncUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7E9B15E1C566E83002165B6 /* Build configuration list for PBXNativeTarget "DollSyncUITests" */;
+			buildPhases = (
+				C7E9B14B1C566E83002165B6 /* Sources */,
+				C7E9B14C1C566E83002165B6 /* Frameworks */,
+				C7E9B14D1C566E83002165B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7E9B1511C566E83002165B6 /* PBXTargetDependency */,
+			);
+			name = DollSyncUITests;
+			productName = DollSyncUITests;
+			productReference = C7E9B14F1C566E83002165B6 /* DollSyncUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7E9B1281C566E83002165B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Threees;
+				TargetAttributes = {
+					C7E9B12F1C566E83002165B6 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					C7E9B1431C566E83002165B6 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C7E9B12F1C566E83002165B6;
+					};
+					C7E9B14E1C566E83002165B6 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C7E9B12F1C566E83002165B6;
+					};
+				};
+			};
+			buildConfigurationList = C7E9B12B1C566E83002165B6 /* Build configuration list for PBXProject "DollSync" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7E9B1271C566E83002165B6;
+			productRefGroup = C7E9B1311C566E83002165B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7E9B12F1C566E83002165B6 /* DollSync */,
+				C7E9B1431C566E83002165B6 /* DollSyncTests */,
+				C7E9B14E1C566E83002165B6 /* DollSyncUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7E9B12E1C566E83002165B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E9B13E1C566E83002165B6 /* LaunchScreen.storyboard in Resources */,
+				C7E9B13B1C566E83002165B6 /* Assets.xcassets in Resources */,
+				C7E9B1391C566E83002165B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E9B1421C566E83002165B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E9B14D1C566E83002165B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E9B84955B8ED47662C33C61 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8212085C37E2DFC5051B0C4D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6C791AE95940DD3DD40927B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7E9B12C1C566E83002165B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E9B1771C567253002165B6 /* Log.m in Sources */,
+				C7E9B1751C567253002165B6 /* DebugLog.swift in Sources */,
+				C7E9B1361C566E83002165B6 /* ViewController.swift in Sources */,
+				C7E9B1851C56772E002165B6 /* DSVoice.swift in Sources */,
+				C7E9B1341C566E83002165B6 /* AppDelegate.swift in Sources */,
+				C7E9B1741C567253002165B6 /* AirSensorManager.m in Sources */,
+				C7E9B1781C567253002165B6 /* Share.m in Sources */,
+				C7E9B1811C5673A7002165B6 /* AirServiceManager.swift in Sources */,
+				C7E9B1641C567243002165B6 /* DSKonashi.m in Sources */,
+				C7E9B17B1C567253002165B6 /* Util_C.m in Sources */,
+				C7E9B17A1C567253002165B6 /* Util.swift in Sources */,
+				C7E9B1761C567253002165B6 /* FileManager.m in Sources */,
+				C7E9B1801C5673A7002165B6 /* AirService.swift in Sources */,
+				C7E9B17F1C5673A7002165B6 /* AirNetworkManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E9B1401C566E83002165B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E9B1491C566E83002165B6 /* DollSyncTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E9B14B1C566E83002165B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E9B1541C566E83002165B6 /* DollSyncUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7E9B1461C566E83002165B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7E9B12F1C566E83002165B6 /* DollSync */;
+			targetProxy = C7E9B1451C566E83002165B6 /* PBXContainerItemProxy */;
+		};
+		C7E9B1511C566E83002165B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7E9B12F1C566E83002165B6 /* DollSync */;
+			targetProxy = C7E9B1501C566E83002165B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7E9B1371C566E83002165B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E9B1381C566E83002165B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7E9B13C1C566E83002165B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E9B13D1C566E83002165B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7E9B1561C566E83002165B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7E9B1571C566E83002165B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7E9B1591C566E83002165B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289163D6E399210613E73BFC /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = DollSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.threees.DollSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DollSync/DollSync-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7E9B15A1C566E83002165B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93ED19369D55C06541B16DA1 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = DollSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.threees.DollSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DollSync/DollSync-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		C7E9B15C1C566E83002165B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DollSyncTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.threees.DollSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DollSync.app/DollSync";
+			};
+			name = Debug;
+		};
+		C7E9B15D1C566E83002165B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DollSyncTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.threees.DollSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DollSync.app/DollSync";
+			};
+			name = Release;
+		};
+		C7E9B15F1C566E83002165B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DollSyncUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.threees.DollSyncUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DollSync;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C7E9B1601C566E83002165B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DollSyncUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.threees.DollSyncUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DollSync;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7E9B12B1C566E83002165B6 /* Build configuration list for PBXProject "DollSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7E9B1561C566E83002165B6 /* Debug */,
+				C7E9B1571C566E83002165B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7E9B1581C566E83002165B6 /* Build configuration list for PBXNativeTarget "DollSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7E9B1591C566E83002165B6 /* Debug */,
+				C7E9B15A1C566E83002165B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7E9B15B1C566E83002165B6 /* Build configuration list for PBXNativeTarget "DollSyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7E9B15C1C566E83002165B6 /* Debug */,
+				C7E9B15D1C566E83002165B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7E9B15E1C566E83002165B6 /* Build configuration list for PBXNativeTarget "DollSyncUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7E9B15F1C566E83002165B6 /* Debug */,
+				C7E9B1601C566E83002165B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7E9B1281C566E83002165B6 /* Project object */;
+}
